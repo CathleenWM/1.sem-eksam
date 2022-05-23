@@ -8,7 +8,8 @@ Farver jeg bruger. HUSK AT SLETTE DENNE DEL
 
 
 /*-------------------------Universal style for the page-------------------------*/
-@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 
 * {
 	padding: 0;
@@ -42,7 +43,8 @@ img {
 }
 
 p {
-	color: black; /*Change*/
+	color: #FEFFFF; /*Change*/
+	font-family: 'Comfortaa', cursive;
 	font-size: 1.4rem;
 	margin-top: 5px;
 	line-height: 2.5rem;
@@ -54,7 +56,7 @@ p {
 .section-title {
 	font-size: 4rem;
 	font-weight: 300;
-	color: black; /*Change*/
+	color: #17252A; /*Change*/
 	margin-bottom: 10px;
 	text-transform: uppercase;
 	letter-spacing: 0.2rem;
@@ -63,16 +65,16 @@ p {
 
 	/*Color for the spans in the section title*/
 .section-title span {
-	color: crimson; /*Change*/
+	color: #3AAFA9; /*Change*/
 }
 
 	/*Button*/
 .cta {
 	display: inline-block;
 	padding: 10px 30px;
-	color: white; /*Change*/
+	color: #FEFFFF; /*Change*/
 	background-color: transparent;
-	border: 2px solid crimson; /*Change*/
+	border: 2px solid #DEF2F1; /*Change*/
 	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
@@ -82,8 +84,8 @@ p {
 }
 
 .cta:hover {
-	color: white; /*Change*/
-	background-color: crimson; /*Change*/
+	color: #2B7A78; /*Change*/
+	background-color: #DEF2F1; /*Change*/
 }
 
 /*-------------------------End of Universal style for the page-------------------------*/
@@ -155,7 +157,7 @@ p {
 }
 
 #nav .nav-list ul li:hover a {
-	color: crimson; /*Change*/
+	color: #3AAFA9; /*Change*/
 }
 
 #nav .nav-list ul a{
@@ -163,10 +165,26 @@ p {
 	font-weight: 500;
 	letter-spacing: .2rem;
 	text-decoration: none;
-	color: white; /*Change*/
+	color: #DEF2F1; /*Change*/
 	text-transform: uppercase;
 	padding: 20px;
 	display: block;
+}
+
+	/*The line under the menu*/
+#nav .nav-list ul li::after{
+    content: '';
+    width: 0%; 
+    height: 2px;
+    background: #3AAFA9; /*Change*/
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+	 
+#nav .nav-list ul li:hover::after{
+    width: 70%;
 }
 
 	/*Logo image*/
@@ -181,7 +199,7 @@ p {
 
 /*-------------------------Header Section-------------------------*/
 #header {
-	background-image: url(); /*NOT SET*/
+	background-image: url(images/header.png); /*NOT SET*/
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -236,7 +254,7 @@ p {
 	left: 0;
 	height: 100%;
 	width: 0;
-	background-color: crimson; /*Change*/
+	background-color: #3AAFA9; /*Change*/
 	animation: text_reveal_box 1s ease;
 	animation-delay: 0.5s;
 }
@@ -264,6 +282,10 @@ p {
 	padding: 100px 0;
 }
 
+#skills .skills-top p{
+	color: #17252A;
+}
+
 #skills .skills-top {
 	max-width: 500px;
 	margin: 0 auto;
@@ -279,6 +301,7 @@ p {
 }
 
 #skills .skills-item {
+	height: 350px;
 	flex-basis: 80%;
 	display: flex;
 	align-items: flex-start;
@@ -314,13 +337,13 @@ p {
 
 #skills .skills-item h2 {
 	font-size: 2rem;
-	color: white; /*Change*/
+	color: #DEF2F1 ; /*Change*/
 	margin-bottom: 10px;
 	text-transform: uppercase;
 }
 
 #skills .skills-item p {
-	color: white; /*Change*/
+	color: #FEFFFF; /*Change*/
 	text-align: left;
 }
 
@@ -367,7 +390,7 @@ p {
 	justify-content: center;
 	flex-direction: column;
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%); /*Can change*/
-	color: white; /*Change*/
+	color: #2B7A78; /*Change*/
 }
 
 #projects .project-info h1 {
@@ -382,7 +405,7 @@ p {
 }
 
 #projects .project-info p {
-	color: white; /*Change*/
+	color: #FEFFFF; /*Change*/
 }
 
 #projects .project-img {
@@ -445,6 +468,7 @@ p {
 
 #about .col-right p {
 	margin-bottom: 20px;
+	color: #17252A;
 }
 
 	/*Image border*/
@@ -462,7 +486,7 @@ p {
 	top: 19px;
 	height: 98%;
 	width: 98%;
-	border: 7px solid crimson; /*Change*/
+	border: 7px solid #3AAFA9; /*Change*/
 	z-index: -1; /*Minus so it's behinde the image*/
 }
 
@@ -543,7 +567,7 @@ p {
 }
 
 #footer h2 { /*Look at the text size*/
-	color: white; /*Change*/
+	color: #DEF2F1; /*Change*/
 	font-weight: 500;
 	font-size: 1.8rem;
 	letter-spacing: 0.1rem;
@@ -589,7 +613,7 @@ p {
 
 @keyframes text_reveal_udd {
 	100% {
-		color: crimson; /*Change*/
+		color: #3AAFA9; /*Change*/
 		font-weight: 500;
 	}
 }
@@ -669,7 +693,7 @@ p {
 		top: 34px;
 		height: 98%;
 		width: 98%;
-		border: 10px solid crimson; /*Change*/
+		border: 10px solid #3AAFA9; /*Change*/
 	}
 	
 	#about .col-right {
@@ -753,15 +777,28 @@ p {
 		display: none;
 	}
 
+	/*----------End of Navigation Section----------*/
+
+
 	/*----------Skills Section----------*/
+	#skills .skills-item{
+		height: 400px;
+	}
+	
 	#skills .skills-bottom .skills-item {
 		flex-basis: 22%;
 		margin: 1.5%;
 	}
 
+	/*----------End of Skills Section----------*/
+
+
 	/*----------Contact Section----------*/
 	#contact .contact-items{
 		padding: 10px;
+	}
+
+	/*----------End of Contact Section----------*/
 }
 
 /*-------------------------End of Responsivness for Desktop size-------------------------*/
