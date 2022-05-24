@@ -88,6 +88,23 @@ p {
 	background-color: #DEF2F1; /*Change*/
 }
 
+	/*Link style*/
+a:link {
+	color: #3AAFA9; /*Unused*/
+ }
+
+a:visited {
+	color: #DEF2F1; /*Used*/
+}
+  
+a:hover {
+	color: #2B7A78; /*Hover*/
+  }
+  
+a:active {
+	color:#17252A ; /*Active*/
+  }
+
 /*-------------------------End of Universal style for the page-------------------------*/
 
 
