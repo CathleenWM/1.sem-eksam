@@ -292,11 +292,13 @@ a:active {
 
 #skills .skills-top p{
 	color: #17252A;
+	margin: 0 10px;
 }
 
 #skills .skills-top {
 	max-width: 500px;
 	margin: 0 auto;
+	
 }
 
 	/*Title backdrop*/
